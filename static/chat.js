@@ -6,13 +6,6 @@ const models = {
     stopToken: "</s>",
     extraStopSequences: ["\n\nHuman"],
   },
-  "bigscience/bloom-petals": {
-    name: "regular BLOOM-176B",
-    href: "https://huggingface.co/bigscience/bloom",
-    sepToken: "\n\n",
-    stopToken: "\n\n",
-    extraStopSequences: [],
-  },
 };
 var curModel = "bigscience/bloomz-petals";
 
