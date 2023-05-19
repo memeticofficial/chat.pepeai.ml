@@ -41,6 +41,27 @@
   src: url('./fonts/terminator real nfi.ttf') format("truetype");
 }
 
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.4);
+}
+
+/* Other browsers */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.4);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
 html {
   background-color: #0c0a24;
   background-image: radial-gradient(circle, rgba(10, 5, 255, 0.7), rgba(255, 43, 208, 0.7));
@@ -62,7 +83,12 @@ body {
 }
 
 .main-chat {
+  max-height: 100vh;
+}
 
+.dialogue {
+  max-height: 52vh;
+  overflow-y: auto;
 }
 /*
  * Custom translucent site header
@@ -222,7 +248,7 @@ main p {
 .human-replica {
 /*  background-color: #f7f7ff;*/
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 8px;
 }
 
 .human-replica:focus-within {
@@ -268,7 +294,7 @@ main p {
   font-size: 11pt;
   background-color: #fff7f7;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 8px;
   max-width: 350px;
 }
 
