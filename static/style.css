@@ -78,6 +78,14 @@ body {
   color: rgba(139, 253, 1, 1);
 }
 
+.header h1 {
+  font-size: 40pt;
+}
+
+.header h1 span {
+  font-size: 32pt;
+}
+
 .container {
   max-width: 960px;
 }
@@ -150,6 +158,7 @@ body {
 .flex-equal > * {
   flex: 1;
 }
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
@@ -160,6 +169,15 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 24pt;
+  }
+  
+  .header h1 span {
+    font-size: 24pt;
+  }
+}
 
 .form-control:focus {
   /* From Bootswatch Flatly theme */
